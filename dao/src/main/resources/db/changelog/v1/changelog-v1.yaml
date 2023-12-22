@@ -1,0 +1,15 @@
+databaseChangeLog:
+    - changeSet:
+        id: payment
+        author: max
+        changes:
+            - sqlFile:
+                path: 0001-payment.sql
+                relativeToChangelogFile: true
+    - changeSet:
+        id: invoice
+        author: max
+        changes:
+            - sqlFile:
+                path: 0005-invoice.sql
+                relativeToChangelogFile: true
